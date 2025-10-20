@@ -1,2 +1,2 @@
 #!/bin/bash
-puts("Programming is like building a multiligual puzzle");
+puts("Programming is like building a multiligual puzzle");0
