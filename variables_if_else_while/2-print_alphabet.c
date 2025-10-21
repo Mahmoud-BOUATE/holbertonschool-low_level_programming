@@ -10,15 +10,15 @@
 */
 int main(void)
 {
-    char str[] = "abcdefghijklmnopqrstuvwxyz";
-    int i = 0;
-    while (str[i] =! '\z')
-    {
-    putchar(str[i]);
-    i++;
-    }
-    putchar('\n')
+char str[] = "abcdefghijklmnopqrstuvwxyz";
+int i = 0;
+while (str[i] != 'z')
+{
+putchar(str[i]);
+i++;
+}
+putchar('\n');
 
-    return 0;
+return (0);
 }
 
