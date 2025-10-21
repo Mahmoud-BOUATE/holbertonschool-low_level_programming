@@ -1,4 +1,5 @@
-#include <main.h>
+#include "main.h"
+
 /**
  * main - fonction principale
  *
@@ -19,3 +20,4 @@ _putchar('r');
 _putchar('\n');
 return (0);
 }
+
