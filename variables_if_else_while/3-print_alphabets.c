@@ -10,11 +10,20 @@
 */
 int main(void)
 {
-char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
+char alphabetmin[] = "abcdefghijklmnopqrstuvwxyz";
+char alphabetmaj[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
 int i = 0;
-while (str[i] != '\0')
+while (alphabetmin[i] != '\0')
 {
-putchar(str[i]);
+putchar(alphabetmin[i]);
+
+i++;
+}
+while (alphabetmaj[i] != '\0')
+{
+
+putchar(alphabetmaj[i]);
 i++;
 }
 putchar('\n');
