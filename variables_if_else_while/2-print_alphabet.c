@@ -10,12 +10,10 @@
 */
 int main(void)
 {
-char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-int i = 0;
-while (str[i] != '\0')
+char i;
+for (i = 'a'; i <= 'z'; i++)
 {
-putchar(str[i]);
-i++;
+putchar(i);
 }
 putchar('\n');
 
