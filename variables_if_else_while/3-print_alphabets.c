@@ -14,12 +14,15 @@ char alphabetmin[] = "abcdefghijklmnopqrstuvwxyz";
 char alphabetmaj[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 int i = 0;
-while (alphabetmin[i] != '\0' && alphabetmaj[i] != '\0' )
+while (alphabetmin[i] != '\0' && alphabetmaj[i] != '\0')
 {
 putchar(alphabetmin[i]);
 i++;
+if (alphabetmin[i] == '\0')
+{
 putchar(alphabetmaj[i]);
 i++;
+}
 }
 putchar('\n');
 
