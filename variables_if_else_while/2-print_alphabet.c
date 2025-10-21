@@ -12,12 +12,12 @@ int main(void)
 {
 char str[] = "abcdefghijklmnopqrstuvwxyz";
 int i = 0;
-while ()
+while (str[i] != '\0')
 {
-putchar(str[i] = 'a'; str[i] <= 'z'; str[i]++);
+putchar(str[i]);
 i++;
 }
-putchar('\n');
+putchar('\n')
 
 return (0);
 }
