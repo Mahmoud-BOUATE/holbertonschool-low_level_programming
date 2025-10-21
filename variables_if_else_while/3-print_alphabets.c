@@ -10,22 +10,15 @@
 */
 int main(void)
 {
-char alphabetmin[] = "abcdefghijklmnopqrstuvwxyz";
-char alphabetmaj[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-int i = 0;
-while (alphabetmin[i] != '\0')
+char i;
+for(i = 'a'; i <= 'z'; i++)
 {
-putchar(alphabetmin[i]);
-i++;
-while(alphabetmin[i] == '\0')
-{
-putchar(alphabetmaj[i]);
-i++;
+putchar(i);
 }
+for(i = 'A'; i <= 'Z'; i++)
+{
+putchar(i);
 }
 putchar('\n');
-
 return (0);
 }
-
