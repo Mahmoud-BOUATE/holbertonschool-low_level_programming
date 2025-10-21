@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 * main - fonction
-* 
+*
 * Déclaration de la variable i entier
 * Boucle for pour affichage des chiffres de 0-9
 *
