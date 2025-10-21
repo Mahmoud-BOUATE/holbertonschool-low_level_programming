@@ -2,10 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* Main - Fonction
+* main - Fonction
 *
 * Declaration varibale entier n
-* A chaque exécution, et imprime si le nombre stocké dans n
+* A chaque exécution, imprime si le nombre stocké dans n
 * Positive, negative, ou zero
 *
 * Return: retourne 0 si code valide
