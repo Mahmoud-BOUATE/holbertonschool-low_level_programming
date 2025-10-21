@@ -1,8 +1,15 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
-/* betty style doc for function main goes there */
+/**
+* main - Fonction
+*
+* Declaration varibale entier n
+* A chaque exécution, imprime si le nombre stocké dans n
+* Positive, negative, ou zero
+*
+* Return: retourne 0 si code valide
+*/
 int main(void)
 {
 	int n;
