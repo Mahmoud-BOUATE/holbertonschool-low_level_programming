@@ -1,8 +1,8 @@
 #include "main.h"
 #include <unistd.h>
 /**
-* _inslower - vérifie si les alphabets sont minuscule
-* Boucle pour répéter les alphabets 10 fois
+* _islower - fonction pour déterminer si les caractères saisie sont minu or maj
+* @c: la varible de retour
 * return: if true 1
 * Return: else false 0
 */
