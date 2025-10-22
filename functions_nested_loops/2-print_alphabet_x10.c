@@ -3,6 +3,7 @@
 /**
 * print_alphabet - prints the lowercase alphabet
 * Boucle pour répéter les alphabets 10 fois
+* Retour à la ligne
 */
 void print_alphabet_x10(void)
 {
