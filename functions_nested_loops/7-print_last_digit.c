@@ -1,7 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 /**
-* _abs - fonction qui determine le signe des nombres
+* print_last_digit - fonction qui determine le signe des nombres
 * @n: la varible de retour
 * return: if true 1
 * Return: else false 0
@@ -12,7 +12,7 @@ int j;
 j = n % 10;
 if (j < 0)
 j = -j;
-_putchar('0'+ j);
+_putchar('0' + j);
 return (j);
 }
 
