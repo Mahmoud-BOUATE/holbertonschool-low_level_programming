@@ -1,8 +1,10 @@
 #include "main.h"
 #include <unistd.h>
 /**
-* print_alphabet_x10 - prints the lowercase alphabet
+* _inslower - vérifie si les alphabets sont minuscule
 * Boucle pour répéter les alphabets 10 fois
+* return: if true 1
+* Return: else false 0
 */
 int _islower(int c)
 {
