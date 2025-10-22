@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* main - Entry point
+* main - fonction d'entrée
 *
-* Description: prints "_putchar" followed by a new line using _putchar
+* Description: prints "_putchar" en ajoutant une nouvelle ligne 
 *
 * Return: 0 on success
 */
