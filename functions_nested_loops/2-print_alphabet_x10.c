@@ -2,7 +2,7 @@
 #include <unistd.h>
 /**
 * print_alphabet - prints the lowercase alphabet
-* print_alphabet 10 fois
+* Boucle pour répéter les alphabets 10 fois
 */
 void print_alphabet_x10(void)
 {
