@@ -1,8 +1,8 @@
 #include "main.h"
 #include <unistd.h>
 /**
-* _isalpha - fonction pour déterminer si caractères saisie sont minu or maj
-* @c: la varible de retour
+* print_sign - fonction qui determine le signe des nombres
+* @n: la varible de retour
 * return: if true 1
 * Return: else false 0
 */
@@ -16,7 +16,7 @@ return (1);
 else if (n == 0)
 {
 _putchar('0');
-return (1);
+return (0);
 }
 else
 {
