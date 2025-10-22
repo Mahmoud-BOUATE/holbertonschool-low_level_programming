@@ -6,16 +6,14 @@
 */
 int _islower(int c)
 {
-char r;
-if (c >= 'A' && c <= 'Z')
+if (c >= 'a' && c <= 'z')
 {
-return (1)
+return (1);
 }
-else if
+else
 {
-return (0)
+return (0);
 }
-_putchar('\n');
 }
 
 
