@@ -1,7 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 /**
-* _islower - fonction pour déterminer si les caractères saisie sont minu or maj
+* _islower - fonction pour déterminer si caractères saisie sont minu or maj
 * @c: la varible de retour
 * return: if true 1
 * Return: else false 0
