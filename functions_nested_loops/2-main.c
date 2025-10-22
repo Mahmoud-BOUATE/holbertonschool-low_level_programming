@@ -1,0 +1,17 @@
+#include "main.h"
+#include <unistd.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+for (j = 0; j < 10; j++ )
+{
+print_alphabet();
+}
+return (0);
+}
+

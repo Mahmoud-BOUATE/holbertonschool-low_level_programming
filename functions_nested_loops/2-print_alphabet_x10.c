@@ -10,10 +10,6 @@ for (i = 'a'; i <= 'z'; i++)
 {
 _putchar(i);
 }
-for (j = 0; j < 10; j++ )
-{
-_putchar(i);
-}
 _putchar('\n');
 }
 
