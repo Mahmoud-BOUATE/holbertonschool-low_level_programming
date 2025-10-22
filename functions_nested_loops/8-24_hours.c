@@ -1,0 +1,34 @@
+#include "main.h"
+#include <unistd.h>
+/**
+* print_last_digit - fonction qui determine le signe des nombres
+* @n: la varible de retour
+* return: if true 1
+* Return: else false 0
+*/
+/**
+ * jack_bauer - prints every minute of the day of Jack Bauer
+ * starting from 00:00 to 23:59
+ */
+void jack_bauer(void)
+{
+int hour, minute;
+
+for (hour = 0; hour < 24; hour++)
+{
+for (minute = 0; minute < 60; minute++)
+{
+ _putchar((hour / 10) + '0');
+_putchar((hour % 10) + '0');
+_putchar(':');
+_putchar((minute / 10) + '0');
+_putchar((minute % 10) + '0');
+_putchar('\n');
+}
+}
+}
+
+
+
+
+
