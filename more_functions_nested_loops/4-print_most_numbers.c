@@ -1,12 +1,8 @@
-#include <ctype.h>
 #include <unistd.h>
 #include "main.h"
-
-
 /**
-* print_numbers - function that print numbers
+* print_most_numbers - function that print numbers
 *
-*Return: Always 0.
 */
 void print_most_numbers(void)
 {
