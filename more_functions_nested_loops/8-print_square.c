@@ -1,5 +1,5 @@
-#include <unistd.h>
 #include "main.h"
+#include <unistd.h>
 /**
  * print_square - prints a diagonal line of '\' characters
  * @size: number of characters / lines
@@ -14,7 +14,7 @@ _putchar('\n');
 while (L < size)
 {
 C = 0;
-while(C < size)
+while (C < size)
 {
 _putchar('#');
 C++;
