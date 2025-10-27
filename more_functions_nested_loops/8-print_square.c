@@ -11,10 +11,10 @@ if (size <= 0)
 {
 _putchar('\n');
 }
-while (L < size)
+while (size > L)
 {
 C = 0;
-while (C < size)
+while (size > C)
 {
 _putchar('#');
 C++;
