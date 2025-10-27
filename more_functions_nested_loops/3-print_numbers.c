@@ -1,5 +1,7 @@
 #include <ctype.h>
 #include <unistd.h>
+#include "main.h"
+
 /**
 * print_numbers - function that print numbers
 *
