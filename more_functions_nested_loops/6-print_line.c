@@ -2,7 +2,7 @@
 #include "main.h"
 /**
 * print_line - function that print numbers
-*
+* @n: varible de retour
 */
 
 void print_line(int n)
