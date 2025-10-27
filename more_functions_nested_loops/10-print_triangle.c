@@ -1,33 +1,26 @@
 #include "main.h"
-#include <unistd.h>
-/**
- * print_triangle - prints a triangle
- * @size: number of characters / lines
- */
 
+/**
+ * print_triangle - prints a triangle, followed by a new line
+ * @size: size of the triangle
+ */
 void print_triangle(int size)
 {
-int L = 0, C, space;
+int row, space, hash;
+
 if (size <= 0)
 {
 _putchar('\n');
+return;
 }
-while (size < L)
+for (row = 1; row <= size; row++)
 {
-space = size - L - 1;
-while (space > 0)
-{
+for (space = size - row; space > 0; space--)
 _putchar(' ');
-space--;
-}
 
-C = 0;
-while (L >= C)
-{
+for (hash = 0; hash < row; hash++)
 _putchar('#');
-C++;
-}
+
 _putchar('\n');
-L++;
 }
 }
