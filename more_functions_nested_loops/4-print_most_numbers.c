@@ -2,15 +2,18 @@
 #include <unistd.h>
 #include "main.h"
 
+
 /**
 * print_numbers - function that print numbers
 *
+*Return: Always 0.
 */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 int i;
 for (i = '0'; i <= '9'; i++)
 {
+if (i != '2' && i != '4')
 _putchar(i);
 }
 _putchar('\n');
