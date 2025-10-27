@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include "main.h"
 /**
-* print_most_numbers - function that print numbers
+* more_numbers - function that print numbers
 *
 */
 void more_numbers(void)
@@ -13,9 +13,9 @@ for (i = 0; i < 10; i++)
 int j;
 for (j = 0; j <= 14; j++)
 {
-if ( j < 10)
+if (j < 10)
 _putchar('0' + j);
-else 
+else
 {
 _putchar('0' + j / 10);
 _putchar('0' + j % 10);
@@ -23,5 +23,4 @@ _putchar('0' + j % 10);
 }
 _putchar('\n');
 }
-
 }
