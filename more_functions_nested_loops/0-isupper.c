@@ -1,3 +1,4 @@
+#include <ctype.h>
 /**
 * _isupper : checks for uppercase character
 *
@@ -5,21 +6,14 @@
 * return: si condition est fausse return 0
 */
 
-
-
 int _isupper(int c)
 {
-int i;
-for (i = 'a'; i < 'z'; i++)
-{
-if(_isupper(i))
+if (c >= 'A' && c <= 'Z')
 {
 return(1);
 }
-else 
+else
 {
 return(0);
 }
-}
-_putchar('\n');
 }
