@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * puts2 - afficher un phrase
- * @str: varibale pointeur
+ * puts2 - prints every other character of a string
+ * @str: pointer to the string
  */
 #include "main.h"
 #include <stdio.h>
@@ -12,7 +12,7 @@
  */
 void puts2(char *str)
 {
-int i;
+int i = 0;
 while (str[i] != '\0')
 {
 _putchar(str[i]);
