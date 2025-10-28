@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - prints numbers from 1 to 100 with FizzBuzz rules
@@ -7,31 +7,20 @@
  */
 int main(void)
 {
-int i, j;
-char *str;
-
+int i;
 for (i = 1; i <= 100; i++)
 {
 if (i % 3 == 0 && i % 5 == 0)
-str = "FizzBuzz";
+printf("FizzBuzz");
 else if (i % 3 == 0)
-str = "Fizz";
+printf("Fizz");
 else if (i % 5 == 0)
-str = "Buzz";
+printf("Buzz");
 else
-{
-if (i >= 10)
-_putchar(i / 10 + '0');
-_putchar(i % 10 + '0');
+printf("%d", i);
 if (i != 100)
-_putchar(' ');
-continue;
+printf(" ");  
 }
-for (j = 0; str[j] != '\0'; j++)
-_putchar(str[j]);
-if (i != 100)
-_putchar(' ');
-}
-_putchar('\n');
+printf("\n");
 return (0);
 }
