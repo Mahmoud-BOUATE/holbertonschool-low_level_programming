@@ -1,16 +1,21 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * _puts - afficher un phrase
- * @str: varibale pointeur
+ * rev_string - inverse le contenu d'une chaîne de caractères
+ * @s: chaîne à inverser
  */
-void rev_string(char *s);
- {
-int len;
-while (s[len] != '\0')
+void rev_string(char *s)
 {
-len--;
-_putchar(s[len]);
+    int i = 0, j;
+    char temp;
+    while (s[i] != '\0')
+        i++;
+
+    j = i - 1;  
+    for (i = 0; i < j; i++, j--)
+    {
+        temp = s[i];
+        s[i] = s[j];
+        s[j] = temp;
+    }
 }
-_putchar('\n');
- }
