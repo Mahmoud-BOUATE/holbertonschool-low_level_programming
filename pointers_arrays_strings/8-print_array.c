@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strlen - function that returns the lenght of a string
- * @s:  Pointeur
- *
+ * print_array - function that returns the lenght of a string
+ * @n:  variable
+ * @a: pointeur
  * Return: count.
  */
 void print_array(int *a, int n)
