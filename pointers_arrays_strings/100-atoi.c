@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _atoi - converts a string to an integer
- * @s: string to convert
- * Return: integer value
+ * _atoi - convertit une chaîne en entier
+ * @s: chaîne à convertir
+ * Return: entier correspondant
  */
 int _atoi(char *s)
 {
@@ -21,5 +21,6 @@ while (s[i] >= '0' && s[i] <= '9')
 num = num * 10 + (s[i] - '0');
 i++;
 }
-return (num * sign);
+
+return num * sign;
 }
