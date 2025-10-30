@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _strcmp - this function compares two strings
- * @s1: chaine à comparer 
- * @s2 chaine à comparer
+ * @s1: chaine à comparer
+ * @s2: chaine à comparer
  *
  * Return: pointer to dest
  */
@@ -20,4 +20,4 @@ if (s1[i] == '\0' && s2[i] == '\0')
 return (0);
 else
 return (s1[i] - s2[i]);
-}.
+}
