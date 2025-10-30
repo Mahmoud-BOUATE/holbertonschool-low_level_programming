@@ -4,6 +4,7 @@
  * _strncat this fonction concatenates two strings
  * @dest: Tableau contenant la chaine de caractère 'Hello'
  * @src: Tableau contenant la chaine de caractère 'World!'
+ * @n: le nombre de caractère à afficher tu tableau src
  * Return: Tableau contanant la chaine de caratère 'Hello world!'
  */
 char *_strncat(char *dest, char *src, int n)
