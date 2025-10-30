@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * _strcat - function that returns the lenght of a string
+ * _strncat this fonction concatenates two strings
  * @dest: Tableau contenant la chaine de caractère 'Hello'
  * @src: Tableau contenant la chaine de caractère 'World!'
  * Return: Tableau contanant la chaine de caratère 'Hello world!'
