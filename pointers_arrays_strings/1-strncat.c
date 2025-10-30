@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * _strncat this fonction concatenates two strings
+ * _strncat - this fonction concatenates two strings
  * @dest: Tableau contenant la chaine de caractère 'Hello'
  * @src: Tableau contenant la chaine de caractère 'World!'
  * @n: le nombre de caractère à afficher tu tableau src
