@@ -1,21 +1,28 @@
 #include "main.h"
+#include <ctype.h>   /* pour toupper (optionnel) */
+#include <stddef.h>
 
 /**
- * reverse_array - inverse l'ordre des éléments d'un tableau d'entiers
- * @a: le tableau à inverser
- * @n: le nombre d'éléments dans le tableau
+ * string_toupper - convertit une chaîne en majuscules
+ * @str: la chaîne à convertir
  *
- * Cette fonction échange les éléments du début et de la fin
- * du tableau jusqu'à ce que tous les éléments soient inversés.
+ * Retourne le même pointeur str (ou NULL si str est NULL).
  */
 char *string_toupper(char *str)
 {
-int i = 0;
-while (str[i] != '\0')
-{
+    int i = 0;
+
+    if (str == NULL)
+        return NULL;
+
+    while (str[i] != '\0')
+    {
+    
 if (str[i] >= 'a' && str[i] <= 'z')
-str [i] = str[i] - 32;
+str[i] = str[i] - 32;
 i++;
 }
-return (str[i]);
+return str;
 }
+
+
