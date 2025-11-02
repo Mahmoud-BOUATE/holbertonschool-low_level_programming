@@ -1,9 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * *_strcpy - function that copies the strinf
- * @dest:  variable
- * @src: pointeur
+ * rot13 - function that encodes a string using rot13
+ * @str: pointeur
  * Return: count.
  */
 char *rot13(char *str)
