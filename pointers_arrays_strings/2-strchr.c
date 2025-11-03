@@ -12,9 +12,8 @@ int i = 0;
 while (s[i] != '\0')
 {
 if (s[i] == c)
-s[i + 1] = '\0';
 return (s + i);
 i++;
 }
-return ('\n');
+return (NULL);
 }
