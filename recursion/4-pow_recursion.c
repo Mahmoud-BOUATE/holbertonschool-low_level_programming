@@ -1,29 +1,20 @@
 #include "main.h"
-
 /**
- * _sqrt_check - helper récursif qui teste les candidats x
- * @n: nombre dont on cherche la racine
- * @x: candidat courant
- * Return: la racine naturelle ou -1 si elle n'existe pas
- */
-int _sqrt_check(int n, int x)
+* _pow_recursion - function  that returns the value of x raised to the power y
+* @x: 1er valeur
+* @y: 2eme valeur
+* Return: factorial
+*/
+int _pow_recursion(int x, int y)
 {
-if (x * x == n)
-return (x);
-if (x * x > n)
+if (y < 0)
+{
 return (-1);
-return (_sqrt_check(n, x + 1));
 }
-
-/**
- * _sqrt_recursion - retourne la racine carrée naturelle d’un nombre
- * @n: nombre à tester
- * Return: la racine naturelle ou -1 si elle n'existe pas
- */
-int _sqrt_recursion(int n)
+else if (y == 0)
 {
-if (n < 0)
-return (-1);
-return (_sqrt_check(n, 0));
+return (1);
+}
+return (x * _pow_recursion(x, y - 1));
 }
 
