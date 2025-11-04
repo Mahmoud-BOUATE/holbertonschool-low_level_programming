@@ -1,20 +1,24 @@
 #include "main.h"
 
-/* helper récursif privé : teste les candidats x = 0,1,2,... */
-static int _sqrt_check(int n, int x)
+/**
+ * _sqrt_check - helper récursif qui teste les candidats x
+ * @n: nombre dont on cherche la racine
+ * @x: candidat courant
+ * Return: la racine naturelle ou -1 si elle n'existe pas
+ */
+int _sqrt_check(int n, int x)
 {
-long sq = (long)x * x;
-if (sq == n)
+if (x * x == n)
 return (x);
-if (sq > n)
+if (x * x > n)
 return (-1);
 return (_sqrt_check(n, x + 1));
 }
+
 /**
- * _sqrt_recursion - returns the natural square root of n
- * @n: number to check
- *
- * Return: natural square root, or -1 if none exists
+ * _sqrt_recursion - retourne la racine carrée naturelle d’un nombre
+ * @n: nombre à tester
+ * Return: la racine naturelle ou -1 si elle n'existe pas
  */
 int _sqrt_recursion(int n)
 {
@@ -22,3 +26,4 @@ if (n < 0)
 return (-1);
 return (_sqrt_check(n, 0));
 }
+
