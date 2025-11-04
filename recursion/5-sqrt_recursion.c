@@ -1,26 +1,27 @@
 #include "main.h"
+
 /**
-* _pow_recursion - function  that returns the value of x raised to the power y
-* @x: 1er valeur
-* @y: 2eme valeur
-* Return: factorial
-*/
+ * _sqrt_helper - function to find natural square root using recursion
+ * @n: number to find square root of
+ * @i: iterator starting from 1
+ * Return: natural square root or -1 if none
+ */
+int _sqrt_helper(int n, int i)
+{
+if (i * i == n)
+return (i);
+if (i * i > n)
+return (-1);
+return (_sqrt_helper(n, i + 1));
+}
+/**
+ * _sqrt_recursion - returns the natural square root of a number
+ * @n: number to calculate the square root of
+ * Return: the natural square root, or -1 if none
+ */
 int _sqrt_recursion(int n)
 {
-int x;
 if (n < 0)
-{
 return (-1);
-}
-if (n == 0 || n == 1)
-{
-return (n);
-}
-x = 1;
-while (x * x < n)
-x++;
-if (x * x == n)
-return x;
-else
-return -1;
+return (_sqrt_helper(n, 0));
 }
