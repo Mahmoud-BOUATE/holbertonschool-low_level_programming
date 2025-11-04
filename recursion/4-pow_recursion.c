@@ -1,20 +1,22 @@
 #include "main.h"
-/**
-* _pow_recursion - function  that returns the value of x raised to the power y
-* @x: 1er valeur
-* @y: 2eme valeur
-* Return: factorial
-*/
-int _pow_recursion(int x, int y)
-{
-if (y < 0)
-{
-return (-1);
-}
-else if (y == 0)
-{
-return (1);
-}
-return (x * _pow_recursion(x, y - 1));
-}
 
+/**
+ * _sqrt_recursion - returns the natural square root of n
+ * @n: the number
+ * @x: current candidate for the square root (start with 1)
+ * Return: the natural square root, or -1 if it doesn't exist
+ */
+int _sqrt_recursion_helper(int n, int x)
+{
+if (x * x == n)
+return x;
+if (x * x > n)
+return -1;
+return _sqrt_recursion_helper(n, x + 1);
+}
+int _sqrt_recursion(int n)
+{
+if (n < 0)
+return -1;
+return _sqrt_recursion_helper(n, 1);
+}
