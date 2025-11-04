@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-* factorial - function  that returns the length of a string.
-* @n: pointeur
-*
- * Return: factorial
+* _pow_recursion - function  that returns the value of x raised to the power y
+* @x: 1er valeur
+* @y: 2eme valeur
+* Return: factorial
 */
 int _pow_recursion(int x, int y)
 {
@@ -15,6 +15,6 @@ else if (y == 0)
 {
 return (1);
 }
-return x * _pow_recursion(x, y - 1);
+return (x * _pow_recursion(x, y - 1));
 }
 
