@@ -50,4 +50,5 @@ i++;
 }
 s[counts1 + counts2] = '\0';
 return (s);
+free(s);
 }
