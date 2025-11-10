@@ -2,10 +2,9 @@
 #include "main.h"
 
 /**
-* *create_array - function that creates an array of chars
-* @size: la taille de tableau
-* @c: le caractère à remplir de le tableau
-* Return: return le tableau
+* *_strdup - function that that returns a pointer to a newly allocated
+* @str: la chaine à dupliquer
+* Return: pointer to the duplicated string
 */
 char *_strdup(char *str)
 {
