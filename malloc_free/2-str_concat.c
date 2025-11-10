@@ -46,7 +46,7 @@ while (s2[j] != '\0')
 {
 s[i] = s2[j];
 j++;
-i++;
+i++; 
 }
 s[counts1 + counts2] = '\0';
 return (s);
