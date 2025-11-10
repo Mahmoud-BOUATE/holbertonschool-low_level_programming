@@ -10,25 +10,25 @@
 char *_strdup(char *str)
 {
 int count;
-int i, j;
+int j;
 char *a;
-
 if (str == NULL)
 return (NULL);
 count = 0;
-while (str[i] != '\0')
+while (str[count] != '\0')
 {
-i++;
-count ++;
+count++;
 }
 a = malloc(sizeof(char)  * (count + 1));
-if (str == NULL)
+if (a == NULL)
 return (NULL);
-
-while (j != '\0')
+j = 0;
+for (j = 0; j < count; j++)
 {
-str = a;
-j++;
+a[j]  = str[j];
 }
-return (str);
+a[count] = '\0';
+
+return (a);
+free(a);
 }
