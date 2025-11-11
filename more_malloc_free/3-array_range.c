@@ -18,11 +18,9 @@ array = malloc(sizeof(int) * mem);
 if (array == NULL)
 return  (NULL);
 i = 0;
-min = 0;
 for (i = 0; i <= mem; i++)
 {
-array[i] = array[i] + min;
-min++;
+array[i] = min + i;
 }
 return (array);
 }
