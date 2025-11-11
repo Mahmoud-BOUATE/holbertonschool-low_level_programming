@@ -19,7 +19,7 @@ if (array == NULL)
 return  (NULL);
 for (i = 0; i < mem; i++)
 {
-array[i] = array[i] + 1;
+array[i] = min + i;
 }
 return (array);
 }
