@@ -2,4 +2,5 @@
 #define MAIN_H
 #include <stdlib.h>
 void *malloc_checked(unsigned int b);
+int main(void);
 #endif
