@@ -14,6 +14,8 @@ size_t total;
 
 if (nmemb == 0 || size == 0)
 return (NULL);
+if ((size_t)nmemb > SIZE_MAX / (size_t)size)
+return (NULL);
 total = (size_t)nmemb * (size_t)size;
 p1 = malloc(total);
 if (p1 == NULL)
