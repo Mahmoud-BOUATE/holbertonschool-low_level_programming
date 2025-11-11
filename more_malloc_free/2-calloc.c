@@ -10,6 +10,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 unsigned int *p1;
 unsigned int i;
+
+if (nmemb == 0 || size == 0)
+return (NULL);
 p1 = 0;
 p1 = malloc(size * nmemb);
 i = 0;
@@ -19,8 +22,5 @@ p1[i] = 0;
 }
 if (p1 == NULL)
 return (NULL);
-if (nmemb == 0 || size == 0)
-return (NULL);
 return (p1);
-free(p1);
 }
