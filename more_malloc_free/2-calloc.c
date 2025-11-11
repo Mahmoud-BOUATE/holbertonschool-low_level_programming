@@ -16,6 +16,7 @@ if (p1 == NULL)
 return (NULL);
 if (nmemb == 0 || size == 0)
 return (NULL);
+i = 0;
 for (i = 0; i < p1[i]; i++)
 {
 p1[i] = 0;
