@@ -17,8 +17,7 @@ mem = max - min + 1;
 array = malloc(sizeof(int) * mem);
 if (array == NULL)
 return  (NULL);
-i = 0;
-for (i = 0; i <= mem; i++)
+for (i = 0; i < mem; i++)
 {
 array[i] = min + i;
 }
