@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdint.h>
+#include <string.h>
 /**
  * *_calloc -  function that allocates memory for an array, using malloc.
  * @nmemb: nombre d'élément du tableau
@@ -20,7 +21,6 @@ total = (size_t)nmemb * (size_t)size;
 p1 = malloc(total);
 if (p1 == NULL)
 return (NULL);
-
- memset(p1, 0, total);
+memset(p1, 0, total);
 return (p1);
 }
