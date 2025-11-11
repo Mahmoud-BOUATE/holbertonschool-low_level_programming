@@ -7,46 +7,31 @@
  * @s2: string number 2
  * Return: pointeur vers la zone mémoire allouée
  */
+#include <stdlib.h>
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *s;
-int i, j;
-unsigned int counts1, counts2, count, x;
-if (s1 == NULL || s2 == NULL)
-s1 = "", s2 = "";
+unsigned int counts1 = 0, counts2 = 0, i = 0, j = 0;
+
+if (!s1)
+s1 = "";
+if (!s2)
+s2 = "";
 while (s1[counts1] != '\0')
 counts1++;
 while (s2[counts2] != '\0')
 counts2++;
-count = counts1 + counts2 + 1;
-s = malloc(sizeof(char) * count);
-if (s == NULL)
+if (n > counts2)
+n = counts2;
+
+s = malloc(sizeof(char) * (counts1 + n + 1));
+if (!s)
 return (NULL);
-i = 0;
-while (s1[i] != '\0')
-{
+for (i = 0; i < counts1; i++)
 s[i] = s1[i];
-i++;
-}
-j = 0;
-if (counts2 <= n)
-{
-while (s2[j] != '\0')
-{
-s[i] = s2[j];
-j++;
-i++;
-}
-}
-else
-{
-for (x = 0; x < n && s2[j] != '\0'; x++)
-{
-s[i] = s2[j];
-j++;
-i++;
-}
-}
-s[counts1 + counts2] = '\0';
+for (j = 0; j < n; j++)
+s[i + j] = s2[j];
+s[i + j] = '\0';
 return (s);
 }
