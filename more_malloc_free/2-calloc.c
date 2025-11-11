@@ -10,17 +10,24 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-int *p1;
-size_t total;
+void *ptr;
+unsigned int total_size;
+unsigned int i;
+char *p;
 
 if (nmemb == 0 || size == 0)
 return (NULL);
-if ((size_t)nmemb > SIZE_MAX / (size_t)size)
+
+total_size = nmemb * size;
+if (size != 0 && total_size / size != nmemb)
 return (NULL);
-total = (size_t)nmemb * (size_t)size;
-p1 = malloc(total);
-if (p1 == NULL)
+
+ptr = malloc(total_size);
+if (ptr == NULL)
 return (NULL);
-memset(p1, 0, total);
-return (p1);
+
+p = ptr;
+for (i = 0; i < total_size; i++)
+p[i] = 0;
+return (ptr);
 }
