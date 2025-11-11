@@ -13,10 +13,9 @@ unsigned int i;
 
 if (nmemb == 0 || size == 0)
 return (NULL);
-p1 = 0;
 p1 = malloc(size * nmemb);
 i = 0;
-for (i = 0; i < p1[i]; i++)
+for (i = 0; i < nmemb; i++)
 {
 p1[i] = 0;
 }
