@@ -21,6 +21,6 @@ if (p1 == NULL)
 return (NULL);
 if (nmemb == 0 || size == 0)
 return (NULL);
-
 return (p1);
+free(p1);
 }
