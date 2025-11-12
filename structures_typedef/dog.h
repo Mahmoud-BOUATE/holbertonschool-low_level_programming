@@ -6,7 +6,7 @@
  * @age: âge du chien (nombre flottant)
  * @owner: nom du propriétaire (chaîne de caractères)
  *
- * Description: structure représentant les informations principales d’un chien.
+ * Descr: struc représentant les info principales d’un chien.
  */
 struct dog
 {
