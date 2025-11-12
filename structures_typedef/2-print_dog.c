@@ -5,14 +5,6 @@
  * @d: pointeur vers la structure à afficher
  */
 void print_dog(struct dog *d)
-#include <stdio.h>
-#include "dog.h"
-
-/**
- * print_dog - prints a struct dog
- * @d: pointer to struct dog
- */
-void print_dog(struct dog *d)
 {
 if (d == NULL)
 return;
