@@ -33,6 +33,9 @@ copy_name[i] = '\0';
 d->name = copy_name;
 
 copy_owner = malloc(strlen(owner) + 1);
+if (copy_owner == NULL)
+return (NULL);
+
 j = 0;
 while (owner[j] != '\0')
 {
