@@ -2,7 +2,7 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- * print_dog - afficher la structure dog
+ * free_dog - free la structure
  * @d: pointeur vers la structure à afficher
  */
 void free_dog(dog_t *d)
@@ -11,6 +11,6 @@ if (d == NULL)
 return;
 
 free(d->name);
-free (d->owner);
+free(d->owner);
 free(d);
 }
