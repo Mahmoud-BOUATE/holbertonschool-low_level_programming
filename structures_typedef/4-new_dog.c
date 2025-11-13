@@ -38,6 +38,7 @@ while (owner[i] != '\0')
 copy_owner[i] = owner[i];
 i++;
 }
+copy_owner[i] = '\0';
 d->owner = copy_owner;
 
 d->age = age;
