@@ -33,6 +33,7 @@ copy_name[i] = '\0';
 d->name = copy_name;
 
 copy_owner = malloc(strlen(owner) + 1);
+j = 0;
 while (owner[j] != '\0')
 {
 copy_owner[j] = owner[j];
