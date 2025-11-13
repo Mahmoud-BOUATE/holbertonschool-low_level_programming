@@ -1,53 +1,46 @@
 #include <stdio.h>
-#include "dog.h"
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
+#include "dog.h"
+
 /**
- * new_dog - créer un nouveau chien
- * @name: nom du chien
- * @owner: propriétaire du chien
- * @age: âge du chien
- * Return: pointeur vers la nouvelle structure dog_t, ou NULL si échec
+ * new_dog - Creates a new dog
+ * @name: Name of the dog
+ * @age: Age of the dog
+ * @owner: Owner of the dog
+ *
+ * Return: Pointer to the new dog, or NULL if it fails
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *d;
-char *copy_name, *copy_owner;
-int i, j;
-d = malloc(sizeof(dog_t));
-if (d == NULL)
+dog_t *dog;
+char *name_cpy;
+char *owner_cpy;
+
+dog = malloc(sizeof(dog_t));
+if (dog == NULL)
 return (NULL);
-if (name != NULL)
+
+name_cpy = malloc(strlen(name) + 1);
+if (name_cpy == NULL)
 {
-copy_name = malloc(strlen(name) + 1);
-if (copy_name == NULL)
-{
-free(d);
-return (NULL);
-}
-for (i = 0; name[i]; i++)
-copy_name[i] = name[i];
-copy_name[i] = '\0';
-d->name = copy_name;
-}
-else
-d->name = NULL;
-if (owner != NULL)
-{
-copy_owner = malloc(strlen(owner) + 1);
-if (copy_owner == NULL)
-{
-free(d->name);
-free(d);
+free(dog);
 return (NULL);
 }
-for  (j = 0 ; owner[j]; j++)
-copy_owner[j] = owner[j];
-copy_owner[j] = '\0';
-d->owner = copy_owner;
+strcpy(name_cpy, name);
+
+owner_cpy = malloc(strlen(owner) + 1);
+if (owner_cpy == NULL)
+{
+free(name_cpy);
+free(dog);
+return (NULL);
 }
-else
-d->owner = NULL;
-d->age = age;
-return (d);
+strcpy(owner_cpy, owner);
+
+dog->name = name_cpy;
+dog->age = age;
+dog->owner = owner_cpy;
+
+return (dog);
 }
