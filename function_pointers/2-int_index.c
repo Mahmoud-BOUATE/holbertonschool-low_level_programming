@@ -18,7 +18,6 @@ if (cmp(array[i]) != 0)
 return (i);
 if (cmp(array[i]) == 0)
 {
-    
 }
 }
 
