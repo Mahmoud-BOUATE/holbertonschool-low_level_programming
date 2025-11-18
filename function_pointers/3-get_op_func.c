@@ -1,7 +1,10 @@
 #include "3-calc.h"
 #include <stdio.h>
-#include <string.h> 
+#include <string.h>
 /**
+* *get_op_func - function that select function to perform oper
+* @s: c'est l'opérateur Ex(+)
+* Return: return null si aucun opérateur correspond
 */
 
 
@@ -14,13 +17,13 @@ op_t ops[] = {
 {"/", op_div},
 {"%", op_mod},
 {NULL, NULL}
-    };
-    int i;
+};
+int i;
 i = 0;
 while (ops[i].op != NULL)
 {
-if (strcmp(s, ops[i].op) == 0) 
-return ops[i].f;
+if (strcmp(s, ops[i].op) == 0)
+return (ops[i].f);
 i++;
 
 }
