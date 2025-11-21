@@ -20,22 +20,24 @@ switch (format[i])
 {
 case 'c':
 c = va_arg(ap, int);
-printf("%s %c", sep, c);
+printf("%s%c", sep, c);
 sep = ", ";
 break;
 case 'i':
 e = va_arg(ap, int);
-printf("%s %d", sep, e);
+printf("%s%d", sep, e);
 sep = ", ";
 break;
 case 'f':
 f = va_arg(ap, double);
-printf("%s %f", sep, f);
+printf("%s%f", sep, f);
 sep = ", ";
 break;
 case 's':
 s = va_arg(ap, char *);
-printf("%s %s", sep, s);
+if (s == NULL)
+s = "(nil)";
+printf("%s%s", sep, s);
 sep = ", ";
 break;
 default:
