@@ -29,7 +29,7 @@ printf("%s%d", sep, e);
 sep = ", ";
 break;
 case 'f':
-f = va_arg(ap, double);
+f = va_arg(ap, float);
 printf("%s%f", sep, f);
 sep = ", ";
 break;
