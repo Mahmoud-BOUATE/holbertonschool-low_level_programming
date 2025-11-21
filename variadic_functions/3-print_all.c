@@ -11,7 +11,7 @@ int i = 0, e;
 char c;
 char *s;
 const char *sep = "";
-float f;
+double f;
 va_list ap;
 va_start(ap, format);
 while (format[i] != '\0')
@@ -29,7 +29,7 @@ printf("%s%d", sep, e);
 sep = ", ";
 break;
 case 'f':
-f = va_arg(ap, float);
+f = va_arg(ap, double);
 printf("%s%f", sep, f);
 sep = ", ";
 break;
