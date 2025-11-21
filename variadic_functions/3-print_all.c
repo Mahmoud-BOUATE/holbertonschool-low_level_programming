@@ -14,6 +14,11 @@ const char *sep = "";
 double f;
 va_list ap;
 va_start(ap, format);
+if (format == NULL)
+{
+printf("\n");
+return;
+}
 while (format[i] != '\0')
 {
 switch (format[i])
