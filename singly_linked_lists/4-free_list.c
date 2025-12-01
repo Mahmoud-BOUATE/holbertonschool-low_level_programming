@@ -3,18 +3,18 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * *add_node_end - function that add a new  node at the end of the liste
- * @head: pointer to pointeur to first node
- * @str: string that contain caractère the stock in the chaine
- * Return: number of nodes
+ * *free_list - function that frees a list_t list.
+ * @head: pointer  to first node
  */
 
 void free_list(list_t *head)
 {
-while (head->next == NULL)
+list_t *tmp;
+while (head != NULL)
 {
-    free(head->str);
-    free(head);
-    
+tmp = head->next;
+free(head->str);
+free(head);
+head = tmp;
 }
 }
