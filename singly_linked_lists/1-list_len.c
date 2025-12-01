@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 /**
  * list_len - function that returns the number of elements in a linked list.
  * @h: pointer to the first node
