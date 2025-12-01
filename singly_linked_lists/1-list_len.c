@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * print_list - prints all the elements of a list_t list
+ * list_len - function that returns the number of elements in a linked list.
  * @h: pointer to the first node
  *
  * Return: number of nodes
@@ -16,10 +16,10 @@ list = 0;
 while (h != NULL)
 {
 if (h == NULL)
-return(list);
+return (list);
 else
 h = h->next;
-list ++;
+list++;
 }
-return(list);
+return (list);
 }
