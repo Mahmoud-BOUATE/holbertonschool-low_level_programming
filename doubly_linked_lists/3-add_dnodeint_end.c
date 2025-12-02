@@ -13,8 +13,11 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 dlistint_t *add_node;
 dlistint_t *courant;
 add_node = malloc(sizeof(dlistint_t));
+add_node->n = n;
+add_node->next = NULL;
 if (add_node == NULL)
 return (NULL);
+
 
 if (*head == NULL)
 {
@@ -27,7 +30,7 @@ while (courant->next != NULL)
 courant = courant->next;
 
 courant->next = add_node;
-add_node->n = n;
-add_node->prev = *head;
-return (add_node);
+add_node->prev = courant;
+
+return(add_node);
 }
