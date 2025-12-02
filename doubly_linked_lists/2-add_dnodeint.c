@@ -14,8 +14,10 @@ dlistint_t *add_node;
 add_node = malloc(sizeof(dlistint_t));
 if (add_node == NULL)
 return (NULL);
+
 add_node->n = n;
 add_node->next = *head;
+add_node->prev = *head;
 *head = add_node;
 return (add_node);
 }
