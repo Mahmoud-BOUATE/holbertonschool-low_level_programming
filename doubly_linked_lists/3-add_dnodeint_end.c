@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * *add_dnodeint_end - function that add node at the beginning of a dlistint_t list
+ * *add_dnodeint_end - function that add node at the beginning of a dlistint_t
  * @head: pointer to pointeur to first node
  * @n: donnée
  * Return: the new node
@@ -12,7 +12,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 dlistint_t *add_node;
 dlistint_t *courant;
-
 add_node = malloc(sizeof(dlistint_t));
 if (add_node == NULL)
 return (NULL);
@@ -28,9 +27,7 @@ return (add_node);
 courant = *head;
 while (courant->next != NULL)
 courant = courant->next;
-
 courant->next = add_node;
 add_node->prev = courant;
-
-return(add_node);
+return (add_node);
 }
