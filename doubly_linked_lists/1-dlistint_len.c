@@ -11,8 +11,6 @@ size_t dlistint_len(const dlistint_t *h)
 {
 size_t len;
 len = 0;
-if (h->next == NULL)
-return (len);
 while (h != NULL)
 {
 len++;
