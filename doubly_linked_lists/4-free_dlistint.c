@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * *add_dnodeint_end - function that free
+ * free_dlistint - function that free
  * @head: pointer to pointeur to first node
  */
 void free_dlistint(dlistint_t *head)
