@@ -26,5 +26,6 @@ courant = courant->next;
 courant->next = add_node;
 add_node->n = n;
 add_node->next = NULL;
+add_node->prev = *head;
 return (add_node);
 }
