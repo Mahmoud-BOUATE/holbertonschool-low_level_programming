@@ -15,17 +15,19 @@ dlistint_t *courant;
 add_node = malloc(sizeof(dlistint_t));
 if (add_node == NULL)
 return (NULL);
+
 if (*head == NULL)
 {
+add_node->prev = NULL;
 *head = add_node;
 return (add_node);
 }
 courant = *head;
 while (courant->next != NULL)
 courant = courant->next;
+
 courant->next = add_node;
 add_node->n = n;
-add_node->next = NULL;
 add_node->prev = *head;
 return (add_node);
 }
