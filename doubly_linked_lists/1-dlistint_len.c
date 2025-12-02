@@ -15,8 +15,8 @@ if (h->next == NULL)
 return (len);
 while (h != NULL)
 {
-h = h->next;
 len++;
+h = h->next;
 }
 return (len);
 }
