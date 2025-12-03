@@ -13,35 +13,35 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int descripteur_fichier;
+int fd;
 char *tampon;
 ssize_t nb_lus, nb_ecrits;
 
 if (filename == NULL)
 return (0);
 
-descripteur_fichier = open(filename, O_RDONLY);
-if (descripteur_fichier == -1)
+fd = open(filename, O_RDONLY);
+if (fd == -1)
 return (0);
 
 tampon = malloc(sizeof(char) * letters);
 if (tampon == NULL)
 {
-close(descripteur_fichier);
+close(fd);
 return (0);
 }
 
-nb_lus = read(descripteur_fichier, tampon, letters);
+nb_lus = read(fd, tampon, letters);
 if (nb_lus == -1)
 {
 free(tampon);
-close(descripteur_fichier);
+close(fd);
 return (0);
 }
 
 nb_ecrits = write(STDOUT_FILENO, tampon, nb_lus);
 free(tampon);
-close(descripteur_fichier);
+close(fd);
 
 if (nb_ecrits != nb_lus)
 return (0);
